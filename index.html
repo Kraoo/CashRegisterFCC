@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Register</h1>
+        <div class="items">
+            <label for="item">Item:</label>
+            <input type="text" id="item">
+            <label for="price">Price:</label>
+            <input type="number" id="price">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems">
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="processPayment()">Process Payment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
